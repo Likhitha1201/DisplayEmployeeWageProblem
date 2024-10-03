@@ -28,5 +28,6 @@ def employee_earnings():
      
     total_earnings=wage_earns_parttime*working_hours
     print(f"employee earning per day will be: {total_earnings} rupees")
-  
+    return total_earnings
+
 
