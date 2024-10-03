@@ -31,15 +31,17 @@ def main():
     
     elif choice==2:
        full_earn= employee_earnings()     
-   
+       print(f"{full_earn} rupees")
+       
     elif choice==3:
         part_earn=employee_earnings()
+        print(f"{part_earn} rupees")
         
     elif choice==4:
         main()
     
     elif choice==5:
-        pass
-        
+        month_earning=employee_earnings(full_earn,part_earn)
+        print(f"{month_earning} rupees")
 if __name__=="__main__":
     main()
