@@ -11,7 +11,7 @@
 
 import random
 
-def check_attendance(attend):
+def check_attendance():
     """
         
         Description: 
