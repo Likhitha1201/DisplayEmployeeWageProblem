@@ -30,10 +30,3 @@ def check_attendance(attend):
     else:
         print(attend," ->Employee is Absent!!") 
     
-
-def main():
-    attend= random.randint(0,1)
-    check_attendance(attend)
-
-if __name__=="__main__":
-    main()
