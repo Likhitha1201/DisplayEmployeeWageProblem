@@ -12,8 +12,6 @@
 from EmpWageCompute import check_attendance
 from EmpWageCompute import employee_Daily_earnings
 from EmpWageCompute import employee_parttime_earnings
-from EmpWageCompute import employee_Monthly_earnings
-from EmpWageCompute import employee_totaldays_earnings
 
 def main():
     """
@@ -27,7 +25,7 @@ def main():
         
     """
     
-    choice=int(input("Enter the choice between 1 to 7: /n 1. Check Attendance  /n 2. Daily Earnings /n 3. Part Time Earnings /n 4. Monthly Earnings 5. based on hour and days earnings /n 6. solving above senarious using class and variables /n 7. Exit"))
+    choice=int(input("Enter the choice between 1 to 3: /n 1. Check Attendance  /n 2. Daily Earnings /n 3. Part Time Earnings /n 4. Monthly Earnings 5. based on hour and days earnings /n 6. solving above senarious using class and variables /n 7. Exit"))
     
     if choice==1:
         check_attendance()
@@ -40,17 +38,7 @@ def main():
         part_earn=employee_parttime_earnings()
         print(f"{part_earn} rupees")
         
-    elif choice==4:
-        month_earning=employee_Monthly_earnings(full_earn,20)
-        print(f"{month_earning} rupees")
-       
-    elif choice==5:
-        daily_earn,hour_earn=employee_totaldays_earnings(full_earn,15)
-        print(f"daily earnings will be of {daily_earn} rupees")
-        print(f"hourly earnings will be {hour_earn} rupees")
-    
-    elif choice==6:
-        print("Thank you for your updates....")
+    else:
         exit()
         
         
