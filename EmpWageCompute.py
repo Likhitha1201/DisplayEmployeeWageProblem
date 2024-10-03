@@ -11,7 +11,7 @@
 
 import random
 
-def employee_earnings(wage_earns_parttime,working_hours):
+def employee_earnings():
     """
         
         Description: 
@@ -23,16 +23,10 @@ def employee_earnings(wage_earns_parttime,working_hours):
         
     """
     
-    
+    wage_earns_parttime=15
+    working_hours=8  
+     
     total_earnings=wage_earns_parttime*working_hours
     print(f"employee earning per day will be: {total_earnings} rupees")
   
-    
 
-def main():
-    wage_earns_parttime=15
-    working_hours=8
-    employee_earnings(wage_earns_parttime,working_hours)
-
-if __name__=="__main__":
-    main()
