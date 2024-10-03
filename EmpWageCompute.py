@@ -23,11 +23,10 @@ def employee_parttime_earnings():
         
     """
     
-    wage_earns_parttime=15
-    working_hours=8  
+    wage_earns_parttime=16
+    working_hours=4 
      
     total_earnings=wage_earns_parttime*working_hours
     print(f"employee earning per day will be: {total_earnings} rupees")
     return total_earnings
-
 
