@@ -9,7 +9,6 @@
 """
 
 
-import random
 from EmpWageCompute import check_attendance
 from EmpWageCompute import employee_earnings
 
@@ -28,13 +27,19 @@ def main():
     choice=int(input("Enter the choice between 1 to 7: "))
     
     if choice==1:
-        attend = random.random(0,1)
-        check_attendance(attend)
+        check_attendance()
     
-    if choice==2:
-        employee_earnings()     
+    elif choice==2:
+       full_earn= employee_earnings()     
    
+    elif choice==3:
+        part_earn=employee_earnings()
+        
+    elif choice==4:
+        main()
     
-    
+    elif choice==5:
+        pass
+        
 if __name__=="__main__":
     main()
