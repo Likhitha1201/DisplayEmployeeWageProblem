@@ -11,7 +11,7 @@
 
 import random
 
-def employee_earnings():
+def employee_Daily_earnings():
     """
         
         Description: 
