@@ -23,7 +23,7 @@ def check_attendance(attend):
         
     """
     
-    
+    attend = random.random(0,1)
     
     if attend==1:
         print(attend," ->Employee is Present!!")
