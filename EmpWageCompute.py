@@ -4,33 +4,35 @@
     @Date: 02-10-2024 18:00
     @Last Modified by: Likhitha S
     @Last Modified time: 02-10-2024 18:00
-    @Title:Write a Python program to check employee attendence using random.
+    @Title:Write a Python program to Calculate Daily Employee Wage - Assume Wage per Hour is 20 - Assume Full Day Hour is 8
 
 """
 
 
 import random
 
-def check_attendance(attend):
+def employee_earnings(wage_earnsper_hour,working_hours):
     """
         
         Description: 
-           This function is used to check employee attendence.
+           This function is used to calculate the daily wage according to an hour.
         Parameters:
-          fun_name is used to an input from the user of type function.
+         wage_earnsper_hour, working_hours is an parameters from came from main method.
         Return:
-            It prints the output according to that fun_type . 
+            It prints the calculated amount earned according to the data given . 
         
     """
     
     
-    
-    if attend==1:
-        print(attend," ->Employee is Present!!")
-    else:
-        print(attend," ->Employee is Absent!!") 
+    total_earnings=wage_earnsper_hour*working_hours
+    print(f"employee earning per day will be: {total_earnings} rupees")
+  
     
 
+def main():
+    wage_earnsper_hour=20
+    working_hours=8
+    employee_earnings(wage_earnsper_hour,working_hours)
 
-attend= random.randint(0,1)
-check_attendance(attend)
+if __name__=="__main__":
+    main()
